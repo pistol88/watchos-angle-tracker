@@ -26,6 +26,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     var smoking = false
     var activated = false
     var session : WCSession!;
+    var increment = 1
+    var angles = ["1"]
     
     @IBAction func switchSmoke(_ value: Bool) {
         smoking = value;
@@ -68,6 +70,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     override func willActivate() {
+        if(WCSession.isSupported()){
+            self.session = WCSession.default;
+            self.session.delegate = self;
+            self.session.activate();
+        }
         //locationManager.startUpdatingLocation()
         if(!activated) {
             sendData()
@@ -76,17 +83,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             activated = false
         }
         
-        if(WCSession.isSupported()){
-            self.session = WCSession.default;
-            self.session.delegate = self;
-            self.session.activate();
-        }
-        
         super.willActivate()
     }
     
     func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
     }
     
     @objc func updateTimer() {
@@ -113,10 +114,13 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                         "z": z
                     ]
                 ]
-                
+                self.angles.append(x)
+                self.session.sendMessage(["b": String(self.angles.count)], replyHandler: nil, errorHandler: nil);
+                self.increment = self.increment+1;
                 Alamofire.request("https://coinmonkey.io/bracelet.php", method: .post, parameters: parameters).response { response in
                     if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                         self.test.setText(utf8Text)
+                        //self.session.sendMessage(["b":utf8Text], replyHandler: nil, errorHandler: nil);
                     }
                 }
             }
@@ -129,11 +133,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             "device": WKInterfaceDevice.current().name,
             "action": "activated",
         ]
-        
+        session.sendMessage(["b": String(angles.count)], replyHandler: nil, errorHandler: nil);
+        increment = self.increment+1;
         Alamofire.request("https://coinmonkey.io/bracelet.php", method: .post, parameters: parameters).response { response in
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 self.test.setText(utf8Text)
-                self.session.sendMessage(["b":utf8Text], replyHandler: nil, errorHandler: nil);
+                //self.session.sendMessage(["b":utf8Text], replyHandler: nil, errorHandler: nil);
             }
         }
     }
