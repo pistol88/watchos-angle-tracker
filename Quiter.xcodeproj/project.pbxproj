@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391F3CAF20C03C8F00091E04 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F3CAE20C03C8F00091E04 /* IntentHandler.swift */; };
+		391F3CB820C03C8F00091E04 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391F3CB720C03C8F00091E04 /* IntentsUI.framework */; };
+		391F3CBB20C03C8F00091E04 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F3CBA20C03C8F00091E04 /* IntentViewController.swift */; };
+		391F3CBE20C03C8F00091E04 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391F3CBC20C03C8F00091E04 /* MainInterface.storyboard */; };
+		391F3CC220C03C9000091E04 /* QuitSmokingIphoneUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 391F3CB520C03C8F00091E04 /* QuitSmokingIphoneUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		391F3CC520C03C9000091E04 /* QuitSmokingIphone.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 391F3CAC20C03C8F00091E04 /* QuitSmokingIphone.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		396CEAC620C7CB56009C0CD7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396CEAC520C7CB56009C0CD7 /* UserNotifications.framework */; };
 		39C42BBE20BD3C9700BE79C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C42BBD20BD3C9700BE79C7 /* AppDelegate.swift */; };
 		39C42BC020BD3C9700BE79C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C42BBF20BD3C9700BE79C7 /* ViewController.swift */; };
 		39C42BC320BD3C9700BE79C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C42BC120BD3C9700BE79C7 /* Main.storyboard */; };
@@ -19,9 +26,27 @@
 		39C42BE120BD3C9A00BE79C7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C42BE020BD3C9A00BE79C7 /* InterfaceController.swift */; };
 		39C42BE320BD3C9A00BE79C7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C42BE220BD3C9A00BE79C7 /* ExtensionDelegate.swift */; };
 		39C42BE520BD3C9A00BE79C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C42BE420BD3C9A00BE79C7 /* Assets.xcassets */; };
+		39D3F76020C7BF9A002C1831 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		973E6C492C3F8951E46FCE16 /* Pods_Quiter_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CAB2961F152E0771935F3F /* Pods_Quiter_WatchKit_App.framework */; };
+		B5258AD2D298620F2FFCF17A /* Pods_Quiter_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A304C78C42282942A7A8EC /* Pods_Quiter_WatchKit_Extension.framework */; };
+		D341FAC869142A01A9261B3A /* Pods_Quiter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE9A7CFBBF9335D59C6557A /* Pods_Quiter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		391F3CC020C03C9000091E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39C42BB220BD3C9700BE79C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 391F3CB420C03C8F00091E04;
+			remoteInfo = QuitSmokingIphoneUI;
+		};
+		391F3CC320C03C9000091E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39C42BB220BD3C9700BE79C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 391F3CAB20C03C8F00091E04;
+			remoteInfo = QuitSmokingIphone;
+		};
 		39C42BCE20BD3C9900BE79C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 39C42BB220BD3C9700BE79C7 /* Project object */;
@@ -39,6 +64,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		391F3CCC20C03C9000091E04 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				391F3CC220C03C9000091E04 /* QuitSmokingIphoneUI.appex in Embed App Extensions */,
+				391F3CC520C03C9000091E04 /* QuitSmokingIphone.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39C42BEC20BD3C9A00BE79C7 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,9 +98,34 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39D3F76120C7BF9A002C1831 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				39D3F76020C7BF9A002C1831 /* (null) in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BC5CFBB3751FCB1D81B0073 /* Pods-Quiter WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiter WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiter WatchKit App/Pods-Quiter WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		1C72E14C181D19F103213E60 /* Pods-Quiter WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiter WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiter WatchKit Extension/Pods-Quiter WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		23CAB2961F152E0771935F3F /* Pods_Quiter_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quiter_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADB358A810724B965B3E503 /* Pods-Quiter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quiter/Pods-Quiter.release.xcconfig"; sourceTree = "<group>"; };
+		3144E7752CF87FE91585BA4B /* Pods-Quiter WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiter WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quiter WatchKit Extension/Pods-Quiter WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		391F3CAC20C03C8F00091E04 /* QuitSmokingIphone.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuitSmokingIphone.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		391F3CAE20C03C8F00091E04 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		391F3CB020C03C8F00091E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391F3CB520C03C8F00091E04 /* QuitSmokingIphoneUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuitSmokingIphoneUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		391F3CB720C03C8F00091E04 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		391F3CBA20C03C8F00091E04 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		391F3CBD20C03C8F00091E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		391F3CBF20C03C9000091E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		396CEAC520C7CB56009C0CD7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
 		39C42BBA20BD3C9700BE79C7 /* Quiter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C42BBD20BD3C9700BE79C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39C42BBF20BD3C9700BE79C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,13 +142,42 @@
 		39C42BE220BD3C9A00BE79C7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		39C42BE420BD3C9A00BE79C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39C42BE620BD3C9A00BE79C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47A304C78C42282942A7A8EC /* Pods_Quiter_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quiter_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80944373A7B97DB3E7CD38D8 /* Pods-Quiter WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiter WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quiter WatchKit App/Pods-Quiter WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B55EDEDCD2306947D1F620D1 /* Pods-Quiter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiter/Pods-Quiter.debug.xcconfig"; sourceTree = "<group>"; };
+		EFE9A7CFBBF9335D59C6557A /* Pods_Quiter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quiter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		013C95D6CB17795191C54248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396CEAC620C7CB56009C0CD7 /* UserNotifications.framework in Frameworks */,
+				973E6C492C3F8951E46FCE16 /* Pods_Quiter_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391F3CA920C03C8F00091E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391F3CB220C03C8F00091E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391F3CB820C03C8F00091E04 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39C42BB720BD3C9700BE79C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D341FAC869142A01A9261B3A /* Pods_Quiter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,19 +185,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5258AD2D298620F2FFCF17A /* Pods_Quiter_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391F3CAD20C03C8F00091E04 /* QuitSmokingIphone */ = {
+			isa = PBXGroup;
+			children = (
+				391F3CAE20C03C8F00091E04 /* IntentHandler.swift */,
+				391F3CB020C03C8F00091E04 /* Info.plist */,
+			);
+			path = QuitSmokingIphone;
+			sourceTree = "<group>";
+		};
+		391F3CB620C03C8F00091E04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				396CEAC520C7CB56009C0CD7 /* UserNotifications.framework */,
+				391F3CB720C03C8F00091E04 /* IntentsUI.framework */,
+				EFE9A7CFBBF9335D59C6557A /* Pods_Quiter.framework */,
+				23CAB2961F152E0771935F3F /* Pods_Quiter_WatchKit_App.framework */,
+				47A304C78C42282942A7A8EC /* Pods_Quiter_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		391F3CB920C03C8F00091E04 /* QuitSmokingIphoneUI */ = {
+			isa = PBXGroup;
+			children = (
+				391F3CBA20C03C8F00091E04 /* IntentViewController.swift */,
+				391F3CBC20C03C8F00091E04 /* MainInterface.storyboard */,
+				391F3CBF20C03C9000091E04 /* Info.plist */,
+			);
+			path = QuitSmokingIphoneUI;
+			sourceTree = "<group>";
+		};
 		39C42BB120BD3C9700BE79C7 = {
 			isa = PBXGroup;
 			children = (
 				39C42BBC20BD3C9700BE79C7 /* Quiter */,
 				39C42BD020BD3C9900BE79C7 /* Quiter WatchKit App */,
 				39C42BDF20BD3C9A00BE79C7 /* Quiter WatchKit Extension */,
+				391F3CAD20C03C8F00091E04 /* QuitSmokingIphone */,
+				391F3CB920C03C8F00091E04 /* QuitSmokingIphoneUI */,
+				391F3CB620C03C8F00091E04 /* Frameworks */,
 				39C42BBB20BD3C9700BE79C7 /* Products */,
+				B03D70FCA2B9D8EBA37750EC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +243,8 @@
 				39C42BBA20BD3C9700BE79C7 /* Quiter.app */,
 				39C42BCC20BD3C9900BE79C7 /* Quiter WatchKit App.app */,
 				39C42BDB20BD3C9A00BE79C7 /* Quiter WatchKit Extension.appex */,
+				391F3CAC20C03C8F00091E04 /* QuitSmokingIphone.appex */,
+				391F3CB520C03C8F00091E04 /* QuitSmokingIphoneUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,22 +283,74 @@
 			path = "Quiter WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		B03D70FCA2B9D8EBA37750EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B55EDEDCD2306947D1F620D1 /* Pods-Quiter.debug.xcconfig */,
+				2ADB358A810724B965B3E503 /* Pods-Quiter.release.xcconfig */,
+				1BC5CFBB3751FCB1D81B0073 /* Pods-Quiter WatchKit App.debug.xcconfig */,
+				80944373A7B97DB3E7CD38D8 /* Pods-Quiter WatchKit App.release.xcconfig */,
+				1C72E14C181D19F103213E60 /* Pods-Quiter WatchKit Extension.debug.xcconfig */,
+				3144E7752CF87FE91585BA4B /* Pods-Quiter WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		391F3CAB20C03C8F00091E04 /* QuitSmokingIphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391F3CCB20C03C9000091E04 /* Build configuration list for PBXNativeTarget "QuitSmokingIphone" */;
+			buildPhases = (
+				391F3CA820C03C8F00091E04 /* Sources */,
+				391F3CA920C03C8F00091E04 /* Frameworks */,
+				391F3CAA20C03C8F00091E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuitSmokingIphone;
+			productName = QuitSmokingIphone;
+			productReference = 391F3CAC20C03C8F00091E04 /* QuitSmokingIphone.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		391F3CB420C03C8F00091E04 /* QuitSmokingIphoneUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391F3CCA20C03C9000091E04 /* Build configuration list for PBXNativeTarget "QuitSmokingIphoneUI" */;
+			buildPhases = (
+				391F3CB120C03C8F00091E04 /* Sources */,
+				391F3CB220C03C8F00091E04 /* Frameworks */,
+				391F3CB320C03C8F00091E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuitSmokingIphoneUI;
+			productName = QuitSmokingIphoneUI;
+			productReference = 391F3CB520C03C8F00091E04 /* QuitSmokingIphoneUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		39C42BB920BD3C9700BE79C7 /* Quiter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39C42BF120BD3C9A00BE79C7 /* Build configuration list for PBXNativeTarget "Quiter" */;
 			buildPhases = (
+				484EDE5741C5BE11901CFB8A /* [CP] Check Pods Manifest.lock */,
 				39C42BB620BD3C9700BE79C7 /* Sources */,
 				39C42BB720BD3C9700BE79C7 /* Frameworks */,
 				39C42BB820BD3C9700BE79C7 /* Resources */,
 				39C42BF020BD3C9A00BE79C7 /* Embed Watch Content */,
+				391F3CCC20C03C9000091E04 /* Embed App Extensions */,
+				7C7AAA8217B890B5E93F7097 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				39C42BCF20BD3C9900BE79C7 /* PBXTargetDependency */,
+				391F3CC120C03C9000091E04 /* PBXTargetDependency */,
+				391F3CC420C03C9000091E04 /* PBXTargetDependency */,
 			);
 			name = Quiter;
 			productName = Quiter;
@@ -180,8 +361,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39C42BED20BD3C9A00BE79C7 /* Build configuration list for PBXNativeTarget "Quiter WatchKit App" */;
 			buildPhases = (
+				8C3876CD4B15BF2A7AC6F47A /* [CP] Check Pods Manifest.lock */,
 				39C42BCA20BD3C9900BE79C7 /* Resources */,
 				39C42BEC20BD3C9A00BE79C7 /* Embed App Extensions */,
+				013C95D6CB17795191C54248 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,9 +380,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39C42BE920BD3C9A00BE79C7 /* Build configuration list for PBXNativeTarget "Quiter WatchKit Extension" */;
 			buildPhases = (
+				8CA9FE5F356C150C1A294449 /* [CP] Check Pods Manifest.lock */,
 				39C42BD720BD3C9A00BE79C7 /* Sources */,
 				39C42BD820BD3C9A00BE79C7 /* Frameworks */,
 				39C42BD920BD3C9A00BE79C7 /* Resources */,
+				39D3F76120C7BF9A002C1831 /* Embed Frameworks */,
+				4890D99C4DD5288056D35DA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,10 +402,16 @@
 		39C42BB220BD3C9700BE79C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Илья Егоров";
 				TargetAttributes = {
+					391F3CAB20C03C8F00091E04 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					391F3CB420C03C8F00091E04 = {
+						CreatedOnToolsVersion = 9.4;
+					};
 					39C42BB920BD3C9700BE79C7 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -247,11 +439,28 @@
 				39C42BB920BD3C9700BE79C7 /* Quiter */,
 				39C42BCB20BD3C9900BE79C7 /* Quiter WatchKit App */,
 				39C42BDA20BD3C9A00BE79C7 /* Quiter WatchKit Extension */,
+				391F3CAB20C03C8F00091E04 /* QuitSmokingIphone */,
+				391F3CB420C03C8F00091E04 /* QuitSmokingIphoneUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		391F3CAA20C03C8F00091E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391F3CB320C03C8F00091E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391F3CBE20C03C8F00091E04 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39C42BB820BD3C9700BE79C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,7 +490,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		484EDE5741C5BE11901CFB8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quiter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4890D99C4DD5288056D35DA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quiter WatchKit Extension/Pods-Quiter WatchKit Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiter WatchKit Extension/Pods-Quiter WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C7AAA8217B890B5E93F7097 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quiter/Pods-Quiter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiter/Pods-Quiter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C3876CD4B15BF2A7AC6F47A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quiter WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA9FE5F356C150C1A294449 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quiter WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		391F3CA820C03C8F00091E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391F3CAF20C03C8F00091E04 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391F3CB120C03C8F00091E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391F3CBB20C03C8F00091E04 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39C42BB620BD3C9700BE79C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +621,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		391F3CC120C03C9000091E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 391F3CB420C03C8F00091E04 /* QuitSmokingIphoneUI */;
+			targetProxy = 391F3CC020C03C9000091E04 /* PBXContainerItemProxy */;
+		};
+		391F3CC420C03C9000091E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 391F3CAB20C03C8F00091E04 /* QuitSmokingIphone */;
+			targetProxy = 391F3CC320C03C9000091E04 /* PBXContainerItemProxy */;
+		};
 		39C42BCF20BD3C9900BE79C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 39C42BCB20BD3C9900BE79C7 /* Quiter WatchKit App */;
@@ -316,6 +644,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		391F3CBC20C03C8F00091E04 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391F3CBD20C03C8F00091E04 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		39C42BC120BD3C9700BE79C7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,9 +679,90 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		391F3CC620C03C9000091E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5W98ZVNV;
+				INFOPLIST_FILE = QuitSmokingIphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Coinmonkey.Quiter.QuitSmokingIphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		391F3CC720C03C9000091E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5W98ZVNV;
+				INFOPLIST_FILE = QuitSmokingIphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Coinmonkey.Quiter.QuitSmokingIphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		391F3CC820C03C9000091E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5W98ZVNV;
+				INFOPLIST_FILE = QuitSmokingIphoneUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Coinmonkey.Quiter.QuitSmokingIphoneUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		391F3CC920C03C9000091E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T5W98ZVNV;
+				INFOPLIST_FILE = QuitSmokingIphoneUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Coinmonkey.Quiter.QuitSmokingIphoneUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		39C42BE720BD3C9A00BE79C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -406,6 +823,7 @@
 		39C42BE820BD3C9A00BE79C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -459,7 +877,9 @@
 		};
 		39C42BEA20BD3C9A00BE79C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C72E14C181D19F103213E60 /* Pods-Quiter WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T5W98ZVNV;
@@ -481,7 +901,9 @@
 		};
 		39C42BEB20BD3C9A00BE79C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3144E7752CF87FE91585BA4B /* Pods-Quiter WatchKit Extension.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T5W98ZVNV;
@@ -503,8 +925,9 @@
 		};
 		39C42BEE20BD3C9A00BE79C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC5CFBB3751FCB1D81B0073 /* Pods-Quiter WatchKit App.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T5W98ZVNV;
@@ -522,8 +945,9 @@
 		};
 		39C42BEF20BD3C9A00BE79C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80944373A7B97DB3E7CD38D8 /* Pods-Quiter WatchKit App.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T5W98ZVNV;
@@ -541,11 +965,14 @@
 		};
 		39C42BF220BD3C9A00BE79C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55EDEDCD2306947D1F620D1 /* Pods-Quiter.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T5W98ZVNV;
 				INFOPLIST_FILE = Quiter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,11 +986,14 @@
 		};
 		39C42BF320BD3C9A00BE79C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ADB358A810724B965B3E503 /* Pods-Quiter.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T5W98ZVNV;
 				INFOPLIST_FILE = Quiter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,6 +1008,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		391F3CCA20C03C9000091E04 /* Build configuration list for PBXNativeTarget "QuitSmokingIphoneUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391F3CC820C03C9000091E04 /* Debug */,
+				391F3CC920C03C9000091E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391F3CCB20C03C9000091E04 /* Build configuration list for PBXNativeTarget "QuitSmokingIphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391F3CC620C03C9000091E04 /* Debug */,
+				391F3CC720C03C9000091E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		39C42BB520BD3C9700BE79C7 /* Build configuration list for PBXProject "Quiter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

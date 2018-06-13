@@ -1,0 +1,6 @@
+framework module Pods_Quiter_WatchKit_App {
+  umbrella header "Pods-Quiter WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}
